@@ -36,26 +36,28 @@ heimdall flash --14 /path/to/recovery.img
 Notice the 'Partition Name' and 'Identifier' values highlighted in red.
 
 
-
-
-
-
-
-
 IMPT
-
-
-
-
 
 
 https://samsung-firmware.org/download/GALAXY__Tab3__/hu44/XAR/T210RUES0CQA1/T210RXAR0CQA1/
 
-my samsung original stock ROM firmware package came from here, simply you can remove the md5 checksum and use Heimdall  flash option
-to flash each file to their respective partitions, please try to back up with TWRP if TWRP has one available or please try to match the
+my samsung original stock ROM firmware package came from here, simply you can remove the md5 checksum and use Heimdall  flash option in the
+GUI  to flash each file to their respective partitions, please try to back up with TWRP if TWRP has one available or please try to match the
 file names exactly with their partition if not sure do research from what I see it is necessary the device Has
 boot.img
 system.img
 recovery.image
 
-odin was supposed to do this but the heimdall configuration that it installs is buuged up 
+odin was supposed to do this but the heimdall configuration that it installs is bugged up
+so I might be able to do it again with odin now that heimdall is working, hopefully odin would know which file goes where after it opens the tar.md5
+file
+
+
+
+run heimdall-frontend in the console, it is safer to use the GUI as you can imagine running the device by place a non-existient
+BIOS if you will as replacement for boot
+go to utilities you need the pit file although you can get this from the command line
+using your unzipped md5 firmware
+then add partition files because HEIMDALL  wants you  to do this manually
+here you must make sure file names match
+we could create a package, because that is what heimdall wants, and go from there, i will setup an XDA developer account to do this 
