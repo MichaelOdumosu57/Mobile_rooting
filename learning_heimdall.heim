@@ -1,0 +1,17 @@
+learning about Heimdall
+
+https://www.rojtberg.net/668/how-to-root-android-using-ubuntu/
+
+installing heimdall,
+so far the apt-get repo is not updated so you have to install from source
+the date was Oct 22,2018 
+
+sudo apt install build-essential cmake zlib1g-dev qt5-default libusb-1.0-0-dev libgl1-mesa-glx libgl1-mesa-dev
+cd ~/
+wget https://gitlab.com/BenjaminDobell/Heimdall/-/archive/master/Heimdall-master.tar.gz
+tar -xvf Heimdall-master.tar.gz
+mkdir build
+cd build
+cmake -DCMAKE_BUILD_TYPE=Release ..
+make
+sudo mv ./bin/heimdall* /usr/local/bin
