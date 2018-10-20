@@ -57,7 +57,11 @@ file
 run heimdall-frontend in the console, it is safer to use the GUI as you can imagine running the device by place a non-existient
 BIOS if you will as replacement for boot
 go to utilities you need the pit file although you can get this from the command line
-using your unzipped md5 firmware
-then add partition files because HEIMDALL  wants you  to do this manually
+using your unzipped md5 firmware -->
+ add partition files because HEIMDALL  wants you  to do this manually
 here you must make sure file names match
-we could create a package, because that is what heimdall wants, and go from there, i will setup an XDA developer account to do this 
+we could create a package, because that is what heimdall wants, and go from there, i will setup an XDA developer to add my package to the website
+
+you press start and if everything alings properly you have a new OS on your device
+to  create a package
+go to create a package and try to find all firmware info related to your device , then create the package for future use 
