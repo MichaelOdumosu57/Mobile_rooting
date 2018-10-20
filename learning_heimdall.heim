@@ -43,3 +43,19 @@ Notice the 'Partition Name' and 'Identifier' values highlighted in red.
 
 
 IMPT
+
+
+
+
+
+
+https://samsung-firmware.org/download/GALAXY__Tab3__/hu44/XAR/T210RUES0CQA1/T210RXAR0CQA1/
+
+my samsung original stock ROM firmware package came from here, simply you can remove the md5 checksum and use Heimdall  flash option
+to flash each file to their respective partitions, please try to back up with TWRP if TWRP has one available or please try to match the
+file names exactly with their partition if not sure do research from what I see it is necessary the device Has
+boot.img
+system.img
+recovery.image
+
+odin was supposed to do this but the heimdall configuration that it installs is buuged up 
