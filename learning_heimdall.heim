@@ -4,7 +4,7 @@ https://www.rojtberg.net/668/how-to-root-android-using-ubuntu/
 
 installing heimdall,
 so far the apt-get repo is not updated so you have to install from source
-the date was Oct 22,2018 
+the date was Oct 22,2018
 
 sudo apt install build-essential cmake zlib1g-dev qt5-default libusb-1.0-0-dev libgl1-mesa-glx libgl1-mesa-dev
 cd ~/
@@ -15,3 +15,31 @@ cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
 make
 sudo mv ./bin/heimdall* /usr/local/bin
+
+
+
+to make sure heimdall is working
+Execute: 'heimdall detect' (This will show if the phone cannot be detected.)
+    if show [device detected its there]
+heimdall download-pit --output SGR.pit,// in the folder you need the pit in
+heimdall print-pit --file SGR.pit // gives you details about the pit file
+
+
+
+IMPT
+PIT file are 'Identifier', 'Partition Name' and 'Flash Filename'.
+
+Code:
+heimdall flash --SOS /path/to/recovery.img
+Code:
+heimdall flash --14 /path/to/recovery.img
+Notice the 'Partition Name' and 'Identifier' values highlighted in red.
+
+
+
+
+
+
+
+
+IMPT
